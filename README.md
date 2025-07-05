@@ -17,10 +17,16 @@ MealBridge is a mobile application built to connect food donors with NGOs and vo
 ## 📷 Screenshots
 
 <p float="left">
-  <img src="docs/screenshots/home_screen.png"      width="200" alt="Home"/>
-  <img src="docs/screenshots/map_view.png"         width="200" alt="Map"/>
-  <img src="docs/screenshots/donation_flow.png"    width="200" alt="Donation Flow"/>
+  <img src="docs/screenshots/loginscreen.png"     width="200" alt="Login Screen"/>
+  <img src="docs/screenshots/signupscreen.png"    width="200" alt="Signup Screen"/>
+  <img src="docs/screenshots/mainactivity.png"    width="200" alt="Main Activity"/>
+  <img src="docs/screenshots/donatescreen.png"    width="200" alt="Donate Screen"/>
+  <img src="docs/screenshots/foodpred.png"        width="200" alt="Food Prediction"/>
+  <img src="docs/screenshots/selectvol.png"       width="200" alt="Select Volunteer"/>
+  <img src="docs/screenshots/collectscreen.png"   width="200" alt="Collect Screen"/>
+  <img src="docs/screenshots/selectdonation.png"  width="200" alt="Select Donation"/>
 </p>
+
 
 ---
 
