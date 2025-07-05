@@ -1,0 +1,41 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FFC1CC</color> <!-- Pinkish Dew -->
+    <color name="colorPrimaryVariant">#FF91A4</color> <!-- Darker Pink -->
+    <color name="colorAccent">#FF69B4</color> <!-- Accent Pink -->
+    <color name="backgroundtwo">#F4DBE0</color>
+    <color name="backgroundthree">#F0CDD3</color>
+    <!-- Primary color (Pinkish Dew) -->
+    <color name="primary">#FFC1CC</color>
+    <color name="highContrastButton">#FF4081</color> <!-- Change to a visible color -->
+    <color name="darker_pink">#D81B60</color>
+    <color name="gray">#808080</color>
+
+    <!-- Darker shade of the primary color -->
+    <color name="primary_variant">#FF91A4</color>
+
+    <color name="highlightbutton">#ED6078</color>
+    <color name="lesshighbutton">#F68699</color>
+
+    <!-- Accent color -->
+    <color name="secondary">#FFB6C1</color>
+
+    <color name="secondary_variant">#FF69B4</color>
+
+    <!-- Background color -->
+    <color name="background">#FFF5F0</color>
+
+    <!-- Text colors -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Button and Text colors -->
+    <color name="button_color">#FF8C94</color>
+    <color name="white_text">#FFFFFF</color>
+
+    <color name="text_primary">#212121</color> <!-- Dark text for readability -->
+    <color name="text_secondary">#757575</color> <!-- Lighter shade for secondary text -->
+
+</resources>

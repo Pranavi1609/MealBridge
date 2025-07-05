@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rounded Button Style -->
+    <style name="RoundedButton">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">@color/on_primary</item>
+    </style>
+
+    <!-- EditText background style -->
+    <style name="EditTextStyle">
+        <item name="android:background">@drawable/edittext_rounded_bg</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

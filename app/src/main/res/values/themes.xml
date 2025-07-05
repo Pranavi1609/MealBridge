@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_variant</item>
+        <item name="colorAccent">@color/secondary</item>
+
+        <!-- Background and Surface Colors -->
+        <item name="android:windowBackground">@drawable/gradient_bg</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Button Styles -->
+        <item name="android:buttonStyle">@style/RoundedButton</item>
+
+        <!-- EditText Style -->
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+    </style>
+</resources>

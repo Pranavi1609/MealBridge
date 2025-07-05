@@ -1,0 +1,158 @@
+<resources>
+    <!-- General Messages -->
+    <string name="no_document_found">No document found</string>
+    <string name="error_message">Error: %1$s</string> <!-- Use %1$s for placeholder -->
+    <string name="loading">Loading...</string>
+
+    <!-- Static Messages -->
+    <string name="message_hello_firestore">Hello Firestore</string>
+
+    <!-- Collect Food Activity -->
+    <string name="title_food">Food Details</string>
+    <string name="food_type">Food Type</string>
+    <string name="food_quantity">Food Quantity</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="food_description">Food Description</string>
+    <string name="food_description_hint">Enter food description</string>
+    <string name="pickup_location_hint">Enter pickup location</string>
+    <string name="confirm_pickup">Confirm Pickup</string>
+    <string name="submit_collection_button">Submit Food Collection</string>
+    <string name="select_food_type">Select Food Type</string>
+    <string name="food_type_hint">Food Type</string>
+    <string name="get_current_location"> Get Current Location</string>
+    <string name="upload_image">  Upload Food Image  </string>
+    <string name="app_name">Meal Bridge</string>
+    <string name="add_food">Add Food</string>
+    <string name="Donate_Food">Donate Food</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <string name="Select_food_type">Select Food Type:</string>
+    <string name="mark_as_collected">Mark as Collected</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="description">Description</string>
+    <string name="location_format">Latitude: %1$.6f, Longitude: %2$.6f</string>
+    <string name="food_image_preview">Food Image Preview</string>
+    <string name="name">Name: </string>
+    <string name="donor_name">Donor Name: </string>
+    <string name="select_volunteers_title">Available Volunteers</string>
+    <string name="select_volunteer">Select Volunteer</string>
+    <string name="phone_number">Phone Number</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_picture_description">Profile Picture</string>
+    <string name="upload_profile_picture">Upload Profile Picture</string>
+    <string name="name_text">Name: %1$s</string> <!-- Placeholder for dynamic name -->
+    <string name="email_text">Email: %1$s</string>
+    <string name="phone_text">Phone: %1$s</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_phone">Enter your phone number</string>
+    <string name="save_profile">Save Profile</string>
+
+    <!-- Main Activity -->
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="login_button">Login</string>
+    <string name="signup_link">Don\'t have an account?</string>
+    <string name="login_title">Login to MealBridge</string>
+    <string name="go_to_profile">Go to Profile</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="welcome_title">Welcome to Meal Bridge</string>
+
+    <!-- Volunteer Activity -->
+    <string name="volunteer_title">Volunteer Registration</string>
+    <string name="volunteer_name">Your Name</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="availability">Availability</string>
+    <string name="volunteer_info">Volunteer Information</string>
+    <string name="volunteer_name_hint">Enter your name</string>
+    <string name="contact_info_hint">Enter contact info</string>
+    <string name="availability_hint">Enter availability</string>
+    <string name="confirm_volunteer">Confirm Volunteer</string>
+    <string name="select_donations_title">Available Donations</string>
+
+    <string name="location">Location</string>
+    <string name="quantity">Quantity</string>
+    <string name="status">Status</string>
+    <string name="accept_donation">Accept Donation</string>
+
+    <!-- Buttons -->
+    <string name="btn_donate_food">Donate Food</string>
+    <string name="collect_food">Collect Food</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="donor">🏠 Donor</string>
+    <string name="ngovolunteer">🏥 NGO/Volunteer</string>
+
+    <string name="NGOsandvolunteershelpdistributefoodefficiently.">Distribute food to those in need.</string>
+    <string name="Donatesurplusfoodtothoseinneed.">Donate surplus food to those in need🍛</string>
+    <string name="loginasngovolunteer">Login as Ngo/Volunteer</string>
+    <string name="loginasdonor">Login as Donor</string>
+    <string name="signupasdonor">Sign up as Donor</string>
+    <string name="signupasngovolunteer">Sign up as Ngo/Volunteer</string>
+    <string name="AlreadyhaveanaccountLogin">Already have an account? Login</string>
+    <string name="create_your_account">Join Meal Bridge, bridge excess to need🍛</string>"
+    <string name="app_logo">App Logo</string>
+    <string name="or">OR</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="sign_up_with">Sign up with</string>
+    <string name="org_name">Organization Name(if NGO)</string>
+    <string name="donate_tagline">Share a Meal, Spread a Smile! 😊</string>
+    <string name="collect_tagline">A meal rescued, a life nourished! 😊</string>
+    <string name="preferred_pickup_time">Preferred Pickup Time</string>
+    <string name="select_time">Select Time</string>
+    <string name="distance">Distance</string>
+    <string name="auto_select">Auto select</string>
+
+    <!-- Error Messages -->
+    <string name="message_error_fetching">Error getting document: %1$s</string> <!-- %1$s placeholder -->
+
+    <!-- API Keys -->
+    <string name="google_maps_key">YOUR_GOOGLE_MAPS_API_KEY</string>
+
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="Home">Home</string>
+    <string name="Food_Name">Food Name</string>
+    <string name="Quantity">Quantity</string>
+    <string name="Pickup_Location">Pickup Location</string>
+    <string name="Submit_Donation">Submit Donation</string>
+    <string name="Meal_Bridge">Meal Bridge</string>
+
+    <string name="Profile_Picture">Profile Picture</string>
+    <string name="user_name">User Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="user_email">user@example.com</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="save">Save</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="fill_all_fields">Please fill in all fields</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="password_length_error">Password must be at least 6 characters</string>
+    <string name="password_mismatch">Passwords do not match</string>
+    <string name="signup_failed">Signup failed</string>
+    <string name="volunteer_sign_up">Volunteer Sign-Up</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="address">Address</string>
+    <string name="default_notification_title">MealBridge Alert</string>
+    <string name="default_notification_message">You have a new notification</string>
+    <string name="channel_name">MealBridge Notifications</string>
+    <string name="channel_description">Channel for MealBridge notifications</string>
+    <string name="notification_title">Notification Title</string>
+    <string name="notification_message">Notification message will appear here</string>
+    <string name="welcome_to_meal_bridge">Turning extra meals into smiles️✨</string>
+    <string name="email_address">Email Address</string>
+    <string name="continue_as_guest">Continue As Guest</string>
+    <!-- Section Titles -->
+    <string name="title_food_collection">Food Collection</string>
+    <string name="title_profile">Profile</string>
+</resources>

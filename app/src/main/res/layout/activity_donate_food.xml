@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".DonateFoodActivity">
+
+    <!-- Main Layout Inside ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/donateFoodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Donate_Food"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="24dp" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/taglineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donate_tagline"
+            android:textColor="@color/highlightbutton"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="4dp" />
+
+        <!-- Lottie Animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/donateFoodAnimation"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/donate_food_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp" />
+
+        <!-- Food Name Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Food_Name"
+            app:boxStrokeColor="@color/lesshighbutton"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/foodNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Food Type Spinner -->
+        <Spinner
+            android:id="@+id/foodTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_border"
+            android:layout_marginTop="12dp" />
+
+        <!-- Quantity Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/food_quantity"
+            app:boxStrokeColor="@color/lesshighbutton"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/quantityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Pickup Location Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pickup_location"
+            app:boxStrokeColor="@color/lesshighbutton"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pickupLocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Get Current Location Button (Aligned Left) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/backgroundthree"
+            android:text="@string/get_current_location"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            app:icon="@drawable/ic_re"
+            app:iconTint="@color/common_google_signin_btn_text_light"
+            app:iconGravity="textStart"
+            android:layout_gravity="start"/>
+
+        <!-- Upload Image Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/upload_image"
+            android:textSize="15sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/foodImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:contentDescription="@string/food_image_preview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <!-- Prediction Result -->
+        <TextView
+            android:id="@+id/predictionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp" />
+
+        <!-- Submit Donation Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitDonationButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/lesshighbutton"
+            android:text="@string/Submit_Donation"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white_text" />
+
+        <!-- Spacer to Push Home Button to Bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <!-- Home Button (Bottom Right) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backToHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Home"
+            android:textColor="@color/common_google_signin_btn_text_light"
+            android:backgroundTint="@color/primary"
+            app:icon="@drawable/ic_arrow"
+            app:iconTint="@color/common_google_signin_btn_text_light"
+            app:iconGravity="textStart"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

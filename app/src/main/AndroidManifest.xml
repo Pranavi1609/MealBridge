@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" android:maxSdkVersion="33"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Make camera feature optional -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+
+        <!-- Firebase Messaging Service -->
+        <service android:name=".MyFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Login Activity (Launcher) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity (Accessible after login) -->
+        <activity android:name=".MainActivity" android:exported="true"/>
+
+        <!-- Other Activities -->
+        <activity android:name=".HomeActivity" android:exported="true"/>
+        <activity android:name=".ProfileActivity" android:exported="true"/>
+        <activity android:name=".SettingsActivity" android:exported="true"/>
+        <activity android:name=".DonateFoodActivity" android:exported="true"/>
+        <activity android:name=".VolunteerActivity" android:exported="true"/>
+        <activity android:name=".CollectFoodActivity" android:exported="true"/>
+        <activity android:name=".SignupActivity" android:exported="true"/>
+        <activity android:name=".EditProfileActivity" android:exported="true"/>
+        <activity android:name=".SelectVolunteerActivity" android:exported="true"/>
+        <activity android:name=".SelectDonationsActivity" android:exported="true"/>
+        <activity android:name=".DonationProgressActivity" android:exported="true"/>
+
+
+        <!-- API Key for Google Maps -->
+        <meta-data
+            android:name="com.google.android.gms.maps.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>
