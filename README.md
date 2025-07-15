@@ -33,7 +33,7 @@ MealBridge is a mobile application built to connect food donors with NGOs and vo
 ## 🛠️ Tech Stack
 
 - **Frontend**: Kotlin (Android Studio)
-- **Backend**: Django + PostgreSQL (Cloud-hosted)
+- **Backend**: Firebase (Cloud-hosted)
 - **ML Model**: MobileNetV2 with TensorFlow & Keras
 - **Image Storage**: Cloudinary
 - **Realtime DB**: Firebase Firestore (for some modules)
