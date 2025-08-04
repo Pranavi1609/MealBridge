@@ -45,61 +45,51 @@ MealBridge is a mobile application built to connect food donors with NGOs and vo
 1. Clone the repository:
    ```bash
    git clone https://github.com/Pranavi1609/MealBridge.git
+   ```
 
-🔧 Setup & Installation
-Clone the repository:
+2. Navigate to the project directory:
+   ```bash
+   cd MealBridge
+   ```
 
-bash
-git clone https://github.com/Pranavi1609/MealBridge.git
-Navigate to the project directory:
+3. Open the project in Android Studio:
+   - Launch Android Studio
+   - Select "Open an Existing Project"
+   - Navigate to the MealBridge directory and click "Open"
 
-bash
-cd MealBridge
-Open the project in Android Studio:
+4. Configure Firebase:
+   - Create a Firebase project at [Firebase Console](https://firebase.google.com/)
+   - Add an Android app to your project
+   - Download `google-services.json` and place it in the `app/` directory
+   - Enable Authentication, Firestore Database, Cloud Storage, and Cloud Messaging
 
-Launch Android Studio
+5. Sync project dependencies:
+   ```bash
+   # Android Studio will automatically sync Gradle files
+   # If manual sync is needed:
+   ./gradlew clean build
+   ```
 
-Select "Open an Existing Project"
+6. Run the application:
+   - Connect your Android device or start an emulator
+   - Click the "Run" button in Android Studio
+   - Grant necessary permissions when prompted
 
-Navigate to the MealBridge directory and click "Open"
+---
 
-Configure Firebase:
+## 📋 Prerequisites
 
-Create a Firebase project at Firebase Console
+- **Android Studio** (latest version)
+- **Java Development Kit (JDK)** 17+
+- **Android SDK** API 28+
+- **Git** installed and configured
+- **Android device** or emulator for testing
 
-Add an Android app to your project
+---
 
-Download google-services.json and place it in the app/ directory
+## 📱 Key Dependencies
 
-Enable Authentication, Firestore Database, Cloud Storage, and Cloud Messaging
-
-Sync project dependencies:
-
-bash
-# Android Studio will automatically sync Gradle files
-# If manual sync is needed:
-./gradlew clean build
-Run the application:
-
-Connect your Android device or start an emulator
-
-Click the "Run" button in Android Studio
-
-Grant necessary permissions when prompted
-
-📋 Prerequisites
-Android Studio (latest version)
-
-Java Development Kit (JDK) 17+
-
-Android SDK API 28+
-
-Git installed and configured
-
-Android device or emulator for testing
-
-📱 Key Dependencies
-text
+```gradle
 dependencies {
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.7.0')
@@ -115,64 +105,70 @@ dependencies {
     // Material Design 3
     implementation 'com.google.android.material:material:1.11.0'
 }
-🔑 Required Permissions
-xml
+```
+
+---
+
+## 🔑 Required Permissions
+
+```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-🎯 How to Use
-For Donors
-Register as a Donor
+```
 
-Add food donation with photos and details
+---
 
-Use ML scanning to assess food quality
+## 🎯 How to Use
 
-Set pickup time and location
+### For Donors
+1. Register as a Donor
+2. Add food donation with photos and details
+3. Use ML scanning to assess food quality
+4. Set pickup time and location
+5. Track donation status in real-time
 
-Track donation status in real-time
+### For Volunteers/NGOs
+1. Register with your role
+2. Browse nearby donations
+3. Claim donations for collection
+4. Update status during pickup/delivery
+5. Coordinate with donors
 
-For Volunteers/NGOs
-Register with your role
+---
 
-Browse nearby donations
+## 🐛 Troubleshooting
 
-Claim donations for collection
+- **Gradle sync failed**: Run `./gradlew clean build`
+- **Firebase issues**: Ensure `google-services.json` is in the correct location
+- **ML model errors**: Verify `.tflite` file is in `app/src/main/assets/`
+- **Permission denied**: Check runtime permissions are properly handled
 
-Update status during pickup/delivery
+---
 
-Coordinate with donors
+## 🤝 Contributing
 
-🐛 Troubleshooting
-Gradle sync failed: Run ./gradlew clean build
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Firebase issues: Ensure google-services.json is in the correct location
+---
 
-ML model errors: Verify .tflite file is in app/src/main/assets/
+## 📄 License
 
-Permission denied: Check runtime permissions are properly handled
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-🤝 Contributing
-Fork the repository
+---
 
-Create a feature branch (git checkout -b feature/AmazingFeature)
+## 📞 Support
 
-Commit your changes (git commit -m 'Add AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-📞 Support
 For issues and questions:
+- Create an issue on [GitHub](https://github.com/Pranavi1609/MealBridge/issues)
+- Email: support@mealbridge.com
 
-Create an issue on GitHub
+---
 
-Email: support@mealbridge.com
-
-Made with ❤️ to reduce food waste and fight hunger
-
+**Made with ❤️ to reduce food waste and fight hunger**
